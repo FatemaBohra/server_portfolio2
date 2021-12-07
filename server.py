@@ -39,7 +39,7 @@ def submit_form():
         try:
             data = request.form.to_dict()
             write_to_csv(data)
-            return redirect('/thank_you.html')
+            return redirect('/thankyou.html')
         except:
             return 'Did not save to databse'
     else:
